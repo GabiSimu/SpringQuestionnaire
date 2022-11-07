@@ -32,15 +32,17 @@ function Questions() {
 
     setQuestion(questions[questionIdx])
     setQuestionIdx((prevQuestionIdx) => prevQuestionIdx + 1)
+    if (questionIdx === questions.length)
+      setQuestion("End of questionnaire");
   }
 
 
   return(
-    <div className="Intrebari">
-      <h2>{question.answer2}</h2>
-      <button onClick={clickHandler}>answer1</button>
-      <button onClick={clickHandler}>answer1</button>
-      <button onClick={clickHandler}>answer1</button>
+    <div>
+      <label>{question.question}</label>
+      <button onClick={clickHandler}>{question.answer1}</button>
+      <button onClick={clickHandler}>{question.answer2}</button>
+      <button onClick={clickHandler}>{question.answer3}</button>
     </div>
   )
   
