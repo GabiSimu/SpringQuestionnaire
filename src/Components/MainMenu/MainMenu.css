@@ -1,0 +1,39 @@
+.mainmenu {
+    background-color: #0400ff;
+    margin: 2rem auto;
+   
+    max-width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    color: rgb(255, 136, 0);
+    border: 1px solid #00ffee;
+  }
+  
+  
+  .mainmenu button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #ff5100;
+    background-color: #6f00ff;
+    color: rgb(255, 238, 0);
+    border-radius: 12px;
+    margin-right: 1rem;
+  }
+  
+  .mainmenu button:hover,
+  .mainmenu button:active {
+    background-color: #000000;
+    border-color: #ff5100;
+  }
+  
+  .mainmenu button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .mainmenu button.alternative:hover,
+  .mainmenu button.alternative:active {
+    background-color: #ddb3f8;
+  }
+  

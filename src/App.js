@@ -1,29 +1,23 @@
-import React, {useState} from "react"
-import './App.css';
-import Questionnaire from "./Components/Questionnaire/Questionnaire";
-import Questions from "./Components/Questions/Questions";
+import React, { useState } from "react";
+import "./App.css";
+import Chestionar from "./Components/Chestionar/Chestionar";
+import MainMenu from "./Components/MainMenu/MainMenu";
 
 function App() {
+  const [showMainMenu, setShowMainMenu] = useState(false);
 
-  const [showNewQuestionnaire, setShowNewQuestionnaire] = useState(false);
-
-  const clickHandlerNewQuestionnaire = () => {
-    setShowNewQuestionnaire(() => {
-      setShowNewQuestionnaire(!showNewQuestionnaire);
+  const clickHandlerMainMenu = () => {
+    setShowMainMenu(() => {
+      setShowMainMenu(!showMainMenu);
     });
   };
 
-  
-
   return (
     <div>
-   
-        <button className="button" onClick={clickHandlerNewQuestionnaire}>
-          <b>New questionnaire</b>
-        </button>
-        {showNewQuestionnaire && <Questionnaire/>}
-  
-        
+      <button className="button" onClick={clickHandlerMainMenu}>
+        <b>Main Menu</b>
+      </button>
+      {showMainMenu && <MainMenu />}
     </div>
   );
 }

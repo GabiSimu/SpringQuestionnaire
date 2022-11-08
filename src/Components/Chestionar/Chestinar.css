@@ -1,0 +1,112 @@
+.chestionar {
+  background-color: #0400ff;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 25rem;
+  max-width: 95%;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  color: rgb(255, 136, 0);
+  border: 1px solid #00ffee;
+  align-self: center;
+}
+
+
+.chestionar button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #ff5100;
+  background-color: #6f00ff;
+  color: rgb(255, 238, 0);
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.chestionar button:hover,
+.chestionar button:active {
+  background-color: #000000;
+  border-color: #ff5100;
+}
+
+.chestionar button.alternative {
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.chestionar button.alternative:hover,
+.chestionar button.alternative:active {
+  background-color: #ddb3f8;
+}
+
+.new-account2 {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #fffb00;
+  background-color: #5500ff;
+  color: rgb(255, 128, 0);
+  border-radius: 360px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+.new-account__label label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: rgb(255, 132, 0);
+  text-align: left;
+}
+
+.input__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+  color:rgb(204, 255, 0);
+  background-color: #8c00ff;
+  text-align: left;
+}
+
+.new-client__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-client__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: rgb(255, 132, 0);
+  text-align: left;
+}
+
+.new-client__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+  color:rgb(204, 255, 0);
+  background-color: #8c00ff;
+  text-align: left;
+}
+
+.new-client__control input:hover,
+.new-client__control input:active {
+  background-color: #2312e3;
+  border-color: #e5ff00;
+}
+
+.new-client__actions {
+  text-align: right;
+}
+

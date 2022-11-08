@@ -12,7 +12,7 @@ return (
             <button>answer3</button>
             <button>Next Question</button>
         </div>
-
+        <Questions></Questions>
     </div>
 )
 
