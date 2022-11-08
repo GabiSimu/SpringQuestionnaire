@@ -1,6 +1,7 @@
 import Chestionar from "../Chestionar/Chestionar";
 import React, { useState } from "react";
 import "./MainMenu.css";
+import axios from "axios";
 
 function MainMenu() {
   const url = "http://locahost:8080/questions";
@@ -21,12 +22,19 @@ function MainMenu() {
   const clickHandlerSaveData = (event) => {
     event.preventDefault();
 
-    const clientData = {
-      name: enteredName,
-      email: enteredEmail,
-    };
+    const data = { username: enteredName, email: enteredEmail };
 
-    console.log(clientData);
+    axios
+
+      .post("http://localhost:8080/clients", data)
+
+      .then(function (response) {
+        console.log(response);
+      })
+
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   const [showChestionar, setShowChestionar] = useState(false);
@@ -38,24 +46,22 @@ function MainMenu() {
   };
 
   return (
+    <div>
     <div className="mainmenu">
       <div>
         <label>Name</label>
-      </div>
-      <div>
         <input type="text" value={enteredName} onChange={nameChangeHandler} />
       </div>
       <div>
         <label>Email</label>
-      </div>
-      <div>
         <input type="text" value={enteredEmail} onChange={emailChangeHandler} />
       </div>
       <div>
         <button onClick={clickHandlerSaveData}>Save data</button>
       </div>
       <button onClick={clickHandlerStart}>Start</button>
-      <div>{showChestionar && <Chestionar />}</div>
+    </div>
+    <div>{showChestionar && <Chestionar />}</div>
     </div>
   );
 }

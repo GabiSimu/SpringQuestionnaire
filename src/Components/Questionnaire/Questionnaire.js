@@ -37,11 +37,11 @@ function Questionnaire() {
    
   };
 
-  // const clickHandler = () => {
-  // setQuestion(questions[questionIdx]);
-  //  setQuestionIdx((prevQuestionIdx) => prevQuestionIdx + 1);
-    // if (questionIdx === questions.length) setQuestion("End of questionnaire");
-  //};
+  const clickHandler = () => {
+   setQuestion(questions[questionIdx]);
+   setQuestionIdx((prevQuestionIdx) => prevQuestionIdx + 1);
+   if (questionIdx === questions.length) setQuestion("End of questionnaire");
+  };
 
   return (
     <div className="questionnaire">

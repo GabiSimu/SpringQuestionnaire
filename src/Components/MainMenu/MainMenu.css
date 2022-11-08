@@ -1,7 +1,8 @@
 .mainmenu {
     background-color: #0400ff;
     margin: 2rem auto;
-   
+    width: 30rem;
+    margin-left: 1rem;
     max-width: 95%;
     border-radius: 12px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -13,15 +14,44 @@
   .mainmenu button {
     font: inherit;
     cursor: pointer;
-    border: 1px solid #ff5100;
-    background-color: #6f00ff;
-    color: rgb(255, 238, 0);
+    border: 1px solid #77ff00;
+    background-color: #5500ff;
+    color: rgb(132, 255, 0);
     border-radius: 12px;
-    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .mainmenu input {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #00a2ff;
+    background-color: #6f00ff;
+    color: #00a2ff;
+    border-radius: 12px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .mainmenu label {
+    font: inherit;
+    cursor: pointer;
+    border: 2px solid #00ff1e;
+    background-color: #6f00ff;
+    color: #00ff1e;
+    border-radius: 12px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
   }
   
   .mainmenu button:hover,
   .mainmenu button:active {
+    background-color: #000000;
+    border-color: #ff5100;
+  }
+  .mainmenu input:hover,
+  .mainmenu input:active {
     background-color: #000000;
     border-color: #ff5100;
   }
